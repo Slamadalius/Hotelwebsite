@@ -1,0 +1,109 @@
+h2 {
+	color: map-get($foundation-palette, primary);
+	font-size: rem-calc(40);
+	margin: rem-calc(20 0);
+}
+
+
+/* -------HEADER-------- */
+.promo-video {
+    position: relative;
+    #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 491px;
+		       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29669e+0,2a3b5a+100&0.7+0,0.7+100 */
+		background: -moz-linear-gradient(top,  rgba(41,102,158,0.7) 0%, rgba(42,59,90,0.7) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(41,102,158,0.7) 0%,rgba(42,59,90,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(41,102,158,0.7) 0%,rgba(42,59,90,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b329669e', endColorstr='#b32a3b5a',GradientType=0 ); /* IE6-9 */
+
+    }
+    .header-content {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .headliner {
+        left: 0;
+        top: 50%;
+        position: absolute;
+        width: 100%;
+        transform: translateY(-50%);
+        h1 {
+            border-top: 2px solid $white;
+            border-bottom: 2px solid $white;
+            color: $white;
+            font-size: rem-calc(35);
+            text-transform: uppercase;
+        }
+    }
+}
+
+.menu-icon,
+.menu-icon:hover {
+    width: rem-calc(50);
+    height: rem-calc(36);
+    margin-top: rem-calc(25);
+    &::after {
+	    background-color: $white;
+	    height: rem-calc(6);
+	    box-shadow: 0 28px 0 $white, 0 14px 0 $white;
+	}
+}
+
+/* -------ROOMS-------- */
+
+.rooms {
+	padding: rem-calc(30 0);
+	.room-image {
+		position: relative;
+
+		.room-title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding-left: rem-calc(20);
+
+			h3 {
+				color: $white;
+			}
+		}
+	}
+	.room-content {
+		background-color: $white;
+		padding: rem-calc(20);
+	}
+}
+
+video {
+    display: block;
+    width: 100%;
+}
+
+.button {
+	@include button-style($secondary-color, darken($secondary-color, 10), $white);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: rem-calc(16);
+	margin: rem-calc(20 0);
+}
+
+/* SEPERATOR IMAGE */
+.separator-image {
+	height: rem-calc(300);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+.pool-image {
+	background-image: url(../assets/images/separators/large/separator01-image.jpg);
+
+}
