@@ -6,166 +6,258 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Spa</title>
-
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-icons.css">
 </head>
 
 <body>
-    <section class="promo-video">
-        <div id="overlay"></div>
-        <video id="video" autoplay loop>
-            <source src="assets/videos/videobg.mp4" type="video/mp4">
-            <source src="assets/videos/videobg.ogv" type="video/ogv">
-            <source src="assets/videos/videobg.webm" type="video/webm">
-        </video>
-        <div class="headliner">
-            <div class="column row">
-                <h1 class="text-center">Passion for Exellence</h1>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+                <h3 class="text-center">Navigation</h3>
+                <ul class="menu vertical" data-drilldown>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li class="has-submenu is-drilldown-submenu-parent"><a href="#">Rooms</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">Room 01</a></li>
+                            <li><a href="#">Room 02</a></li>
+                            <li><a href="#">Room 03</a></li>
+                            <li><a href="#">Room 04</a></li>
+                            <li><a href="#">Room 05</a></li>
+                            <li><a href="#">Room 06</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
-        </div> <!--.headliner -->
-        <div class="header-content">
-            <div class="row">
-                <div class="medium-4 columns">
-                    <img src="assets/images/logo.svg">
+            <!--- off-canvas -->
+            <div class="off-canvas-content" data-off-canvas-content>
+                <section class="promo-video">
+                    <div id="overlay"></div>
+                    <video id="video" autoplay loop>
+                        <source src="assets/videos/videobg.mp4" type="video/mp4">
+                        <source src="assets/videos/videobg.ogv" type="video/ogv">
+                        <source src="assets/videos/videobg.webm" type="video/webm">
+                    </video>
+                    <div class="headliner">
+                        <div class="column row">
+                            <h1 class="text-center">Passion for Exellence</h1>
+                        </div>
+                    </div>
+                    <!--.headliner -->
+                    <div class="header-content">
+                        <div class="row">
+                            <div class="medium-4 columns">
+                                <img src="assets/images/logo.svg">
+                            </div>
+                            <div class="medium-4 columns">
+                                <a href="#" class="menu-icon float-right" data-open="mainMenu"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--.header-content -->
+                </section>
+                <section class="rooms row">
+                    <h2>Our rooms</h2>
+                    <div class="medium-4 columns">
+                        <div class="room-image">
+                            <img src="assets/images/rooms/room-01.jpg">
+                            <div class="room-title">
+                                <h3>Room 01</h3>
+                            </div>
+                        </div>
+                        <!--.room-image -->
+                        <div class="room-content">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                    </div>
+                    <div class="medium-4 columns">
+                        <div class="room-image">
+                            <img src="assets/images/rooms/room-02.jpg">
+                            <div class="room-title">
+                                <h3>Room 02</h3>
+                            </div>
+                        </div>
+                        <!--.room-image -->
+                        <div class="room-content">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                    </div>
+                    <div class="medium-4 columns">
+                        <div class="room-image">
+                            <img src="assets/images/rooms/room-03.jpg">
+                            <div class="room-title">
+                                <h3>Room 03</h3>
+                            </div>
+                        </div>
+                        <!--.room-image -->
+                        <div class="room-content">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                        </div>
+                    </div>
+                </section>
+                <div class="row column">
+                    <a href="#" class="button float-right">View All</a>
                 </div>
-                <div class="medium-4 columns">
-                    <a href="#" class="menu-icon float-right"></a>
+                <!-- SEPERATOR IMAGE -->
+                <div class="separator-image pool-image"></div>
+                <!-- ABOUT US GALLERY -->
+                <section class="about-us-gallery">
+                    <div class="medium-6 columns empty"></div>
+                    <div class="medium-6 columns empty bluebg"></div>
+                    <div class="content-about-us">
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <h2>About Us</h2>
+                                <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                <p> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+                            </div>
+                            <!-- MODALS -->
+                            <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                                <img src="" id="imageContainer">
+                                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- end of Modals -->
+                            <div id="gallery" class="medium-6 columns bluebg">
+                                <h2 class="white">Gallery</h2>
+                                <div class="row small-up-3 medium-up-3 large-up-3">
+                                    <div class="column">
+                                        <a data-open="galleryModal">
+                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a data-open="galleryModal">
+                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a data-open="galleryModal">
+                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a data-open="galleryModal">
+                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a data-open="galleryModal">
+                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a data-open="galleryModal">
+                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- SEPERATOR IMAGE -->
+                <div class="separator-image bar-image"></div>
+                <!-- BOOKING SECTION -->
+                <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                    <h3 class="text-center">Booking Form</h3>
+                    <form data-abide novalidate>
+
+                        <div class="alert callout" style="display: none;" data-abide-error>
+                          <p><i class="fi-alert"></i>There're some problems in your form!</p>
+                        </div>
+
+                        <div class="row columns">
+                            <label>Name:
+                                <input type="text" placeholder="Your Name" required>
+                                <span class="form-error">
+                                  <i class="fi-alert"></i>The name field is required
+                                </span>
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <label>Email:
+                                <input type="email" placeholder="Your Email" required>
+                                <span class="form-error">
+                                  <i class="fi-alert"></i>The email field is required
+                                </span>
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <label>Phone Number:
+                                <input type="tel" placeholder="Your Phone Number" required>
+                                <span class="form-error">
+                                  <i class="fi-alert"></i>The phone number is required
+                                </span>
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <label>Message:
+                                <textarea placeholder="Your Message"></textarea>
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <input type="submit" class="button" value="Submit">
+                        </div>
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </form>
                 </div>
+                <section class="booking row">
+                    <div class="large-8 columns large-centered text-center">
+                        <h2>Book Now</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <a data-open="modalBook" class="button">Book now</a>
+                    </div>
+                </section>
+                <footer>
+                    <div class="row">
+                        <nav class="large-5 columns">
+                            <ul class="vertical menu large-horizontal">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Rooms</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="contact-information large-3 columns">
+                            <ul class="no-bullet vertical">
+                                <li><i class="fi-marker"></i> 842 State Street East New Albany, IN 47150</li>
+                                <li><i class="fi-telephone"></i> 1-222-444-2223</li>
+                                <li><i class="fi-mail"></i> contact@hotelspa.com</li>
+                            </ul>
+                        </div>
+                        <div class="about-us large-4 columns">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                            <ul class="menu social align-right">
+                                <li>
+                                    <a href="http://www.twitter.com">
+                                        <i class="fi-social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.facebook.com">
+                                        <i class="fi-social-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-center copyright">All Right Reserved Hotel Spa 2016.</p>
+                </footer>
             </div>
-        </div> <!--.header-content -->
-    </section>
-
-    <section class="rooms row">
-        <h2>Our rooms</h2>
-        <div class="medium-4 columns">
-          <div class="room-image">
-            <img src="assets/images/rooms/room-01.jpg">
-            <div class="room-title">
-              <h3>Room 01</h3>
-            </div>
-          </div> <!--.room-image -->
-          <div class="room-content">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-          </div>
+            <!-- off-canvas-content -->
         </div>
-        <div class="medium-4 columns">
-          <div class="room-image">
-            <img src="assets/images/rooms/room-02.jpg">
-            <div class="room-title">
-              <h3>Room 02</h3>
-            </div>
-          </div> <!--.room-image -->
-          <div class="room-content">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-          </div>
-        </div>
-        <div class="medium-4 columns">
-          <div class="room-image">
-            <img src="assets/images/rooms/room-03.jpg">
-            <div class="room-title">
-              <h3>Room 03</h3>
-            </div>
-          </div> <!--.room-image -->
-          <div class="room-content">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-          </div>
-        </div>
-
-    </section>
-
-    <div class="row column">
-          <a href="#" class="button float-right">View All</a>
+        <!-- off-canvas-wrapper-inner -->
     </div>
-
-    <!-- SEPERATOR IMAGE -->
-    <div class="separator-image pool-image"></div>
-
-    <!-- ABOUT US GALLERY -->
-    <section class="about-us-gallery">
-      <div class="medium-6 columns empty"></div>
-      <div class="medium-6 columns empty bluebg"></div>
-
-      <div class="content-about-us">
-        <div class="row">
-          <div class="medium-6 columns">
-            <h2>About Us</h2>
-            <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> 
-            <p> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-          </div>
-          <div class="medium-6 columns bluebg">
-            <h2 class="white">Gallery</h2>
-            <div class="row small-up-3 medium-up-3 large-up-3">
-              <div class="column">
-                <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg">
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg">
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg">
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg">
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg">
-              </div>
-              <div class="column">
-                <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEPERATOR IMAGE -->
-    <div class="separator-image bar-image"></div>
-
-    <!-- BOOKING SECTION -->
-    <section class="booking row">
-      <div class="large-8 columns large-centered text-center">
-        <h2>Book Now</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-        <a href="#" class="button">Book now</a>
-      </div>
-    </section>
-
-    <footer>
-      <div class="row">
-        <nav class="large-5 columns">
-          <ul class="vertical menu large-horizontal">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="contact-information large-3 columns">
-          <ul class="no-bullet vertical">
-            <li><i class="fi-marker"></i> 842 State Street East New Albany, IN 47150</li>
-            <li><i class="fi-telephone"></i> 1-222-444-2223</li>
-            <li><i class="fi-mail"></i> contact@hotelspa.com</li>
-          </ul>
-        </div>
-        <div class="about-us large-4 columns">
-          <h4>About Us</h4>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-          <ul class="menu social align-right">
-            <li><a href="http://www.twitter.com">
-              <i class="fi-social-twitter"></i>
-            </a></li>
-            <li><a href="http://www.facebook.com">
-              <i class="fi-social-facebook"></i>
-            </a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="text-center copyright">All Right Reserved Hotel Spa 2016.</p>
-    </footer>
-
+    <!-- off-canvas-wrapper -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
