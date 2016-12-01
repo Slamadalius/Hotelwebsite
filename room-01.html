@@ -34,16 +34,11 @@
             </div>
             <!--- off-canvas -->
             <div class="off-canvas-content" data-off-canvas-content>
-                <section class="promo-video">
+                <section class="promo promo-room-01">
                     <div id="overlay"></div>
-                    <video id="video" autoplay loop>
-                        <source src="assets/videos/videobg.mp4" type="video/mp4">
-                        <source src="assets/videos/videobg.ogv" type="video/ogv">
-                        <source src="assets/videos/videobg.webm" type="video/webm">
-                    </video>
                     <div class="headliner">
                         <div class="column row">
-                            <h1 class="text-center">Passion for Exellence</h1>
+                            <h1 class="text-center">Room 01/ Imperial Room</h1>
                         </div>
                     </div>
                     <!--.headliner -->
@@ -57,113 +52,56 @@
                             </div>
                         </div>
                     </div>
-                    <!--.header-content -->
                 </section>
-                <section class="rooms row">
-                    <h2>Our rooms</h2>
-                    <div class="medium-4 columns">
-                        <div class="room-image">
-                            <img src="assets/images/rooms/room-01.jpg">
-                            <div class="room-title">
-                                <h3>Room 01</h3>
-                            </div>
-                        </div>
-                        <!--.room-image -->
-                        <div class="room-content">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                        </div>
+                <!--.header-content -->
+                <section class="content">
+                 <div class="row">
+                    <div class="large-6 columns large-centered">
+                     <nav class="roomMenu">
+                         <ul class="menu horizontal expanded" data-magellan> 
+                             <li><a href="#room-info">Information</a></li>
+                             <li><a href="#gallery">Gallery</a></li>
+                             <li><a href="#booking">Book Now</a></li>
+                         </ul>
+                     </nav>
                     </div>
-                    <div class="medium-4 columns">
-                        <div class="room-image">
-                            <img src="assets/images/rooms/room-02.jpg">
-                            <div class="room-title">
-                                <h3>Room 02</h3>
-                            </div>
-                        </div>
-                        <!--.room-image -->
-                        <div class="room-content">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                        </div>
-                    </div>
-                    <div class="medium-4 columns">
-                        <div class="room-image">
-                            <img src="assets/images/rooms/room-03.jpg">
-                            <div class="room-title">
-                                <h3>Room 03</h3>
-                            </div>
-                        </div>
-                        <!--.room-image -->
-                        <div class="room-content">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                        </div>
-                    </div>
-                </section>
-                <div class="row column">
-                    <a href="rooms.html" class="button float-right">View All</a>
-                </div>
-                <!-- SEPERATOR IMAGE -->
-                <div class="separator-image pool-image"></div>
-                <!-- ABOUT US GALLERY -->
-                <section class="about-us-gallery">
-                    <div class="medium-6 columns empty"></div>
-                    <div class="medium-6 columns empty bluebg"></div>
-                    <div class="content-about-us">
+                 </div>
+                    <section id="room-info" data-magellan-target="room-info" class="room-info">
                         <div class="row">
-                            <div class="medium-6 columns">
-                                <h2>About Us</h2>
-                                <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                <p> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-                            </div>
-                            <!-- MODALS -->
-                            <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
-                                <img src="" id="imageContainer">
-                                <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <!-- end of Modals -->
-                            <div id="gallery" class="medium-6 columns bluebg">
-                                <h2 class="white">Gallery</h2>
-                                <div class="row small-up-3 medium-up-3 large-up-3">
-                                    <div class="column">
-                                        <a data-open="galleryModal">
-                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="column">
-                                        <a data-open="galleryModal">
-                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="column">
-                                        <a data-open="galleryModal">
-                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="column">
-                                        <a data-open="galleryModal">
-                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="column">
-                                        <a data-open="galleryModal">
-                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="column">
-                                        <a data-open="galleryModal">
-                                            <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg">
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="large-10 columns large-centered">
+                                <p class="text-center">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                                </p>
+                                <p class="text-center">
+                                    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc
+                                </p>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- SEPERATOR IMAGE -->
-                <div class="separator-image bar-image"></div>
-                <!-- BOOKING SECTION -->
-                <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                    </section>
+                    
+                    <section id="gallery" data-magellan-target="gallery" class="gallery bluebg">
+                         <div class="row">
+                              <h2 class="white text-center">Gallery</h2>
+                              <div class="medium-up-4 small-up-2">
+                                  <div class="columns">
+                                      <img src="assets/images/gallery/thumbnail/room01-01.jpg" class="thumbnail">
+                                  </div>
+                                  <div class="columns">
+                                      <img src="assets/images/gallery/thumbnail/room01-02.jpg" class="thumbnail">
+                                  </div>
+                                  <div class="columns">
+                                      <img src="assets/images/gallery/thumbnail/room01-03.jpg" class="thumbnail">
+                                  </div>
+                                  <div class="columns">
+                                      <img src="assets/images/gallery/thumbnail/room01-04.jpg" class="thumbnail">
+                                  </div>
+                              </div>
+                         </div>
+                    </section>
+
+                    <div class="separator-image room01-image"></div>
+
+                    <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
                     <h3 class="text-center">Booking Form</h3>
                     <form data-abide novalidate>
 
@@ -208,13 +146,15 @@
                         </button>
                     </form>
                 </div>
-                <section class="booking row">
+                <section id="booking" data-magellan-target="booking" class="booking row">
                     <div class="large-8 columns large-centered text-center">
                         <h2>Book Now</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                         <a data-open="modalBook" class="button">Book now</a>
                     </div>
                 </section>
+                </section>
+
                 <footer>
                     <div class="row">
                         <nav class="large-5 columns">

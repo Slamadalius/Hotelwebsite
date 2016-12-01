@@ -21,14 +21,27 @@ h2 {
 
 
 /* -------HEADER-------- */
-.promo-video {
+video {
+    display: block;
+    width: 100%;
+}
+
+.promo {
+	height: 50vh;
+	background-size: cover;
+    background-position: center;
+}
+
+.promo-video,
+.promo {
     position: relative;
+    
     #overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 491px;
+        
 		       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29669e+0,2a3b5a+100&0.7+0,0.7+100 */
 		background: -moz-linear-gradient(top,  rgba(41,102,158,0.7) 0%, rgba(42,59,90,0.7) 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(top,  rgba(41,102,158,0.7) 0%,rgba(42,59,90,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -58,6 +71,18 @@ h2 {
         }
     }
 }
+.promo-about-us {
+	background-image: url(../assets/images/featured/about-us.jpg);
+}
+.promo-services {
+	background-image: url(../assets/images/featured/services.jpg);
+}
+.promo-rooms {
+	background-image: url(../assets/images/featured/rooms.jpg);
+}
+.promo-room-01 {
+	background-image: url(../assets/images/featured/room01.jpg);
+}
 
 .menu-icon,
 .menu-icon:hover {
@@ -75,6 +100,9 @@ h2 {
 
 .rooms {
 	padding: rem-calc(30 0);
+	a {
+		color: $black;
+	}
 	.room-image {
 		position: relative;
 
@@ -95,10 +123,6 @@ h2 {
 	}
 }
 
-video {
-    display: block;
-    width: 100%;
-}
 
 .button {
 	@include button-style($secondary-color, darken($secondary-color, 10), $white);
@@ -116,6 +140,10 @@ video {
 	background-attachment: scroll;
 	@include breakpoint(medium) {
 		height: 350px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	@include breakpoint(large) {
 		-webkit-background-size: cover;
@@ -141,6 +169,26 @@ video {
 	}
 	@include breakpoint(large) {
 		background-image: url(../assets/images/separators/large/separator02-image.jpg);
+	}
+
+}
+.rooms-image {
+	background-image: url(../assets/images/separators/small/separator03-image.jpg);
+	@include breakpoint(medium) {
+		background-image: url(../assets/images/separators/medium/separator03-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image: url(../assets/images/separators/large/separator03-image.jpg);
+	}
+
+}
+.room01-image {
+	background-image: url(../assets/images/separators/small/separator-room01-image.jpg);
+	@include breakpoint(medium) {
+		background-image: url(../assets/images/separators/medium/separator-room01-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image: url(../assets/images/separators/large/separator-room01-image.jpg);
 	}
 
 }
@@ -224,3 +272,15 @@ footer {
 	}
 }
 
+
+/** INTERNAL PAGES **/
+
+.content {
+	padding: rem-calc(30 0);
+}
+
+.services .content-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
